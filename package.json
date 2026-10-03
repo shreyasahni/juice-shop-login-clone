@@ -1,0 +1,20 @@
+{
+  "name": "juice-shop-login-clone",
+  "version": "1.0.0",
+  "description": "A simple login form that mimics OWASP Juice Shop, with client- and server-side validation, bcrypt password hashing, and a toggleable vulnerable mode for demonstrating SQL Injection and XSS.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "vuln": "node server.js --vulnerable",
+    "seed": "node db.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2"
+  },
+  "license": "MIT"
+}
